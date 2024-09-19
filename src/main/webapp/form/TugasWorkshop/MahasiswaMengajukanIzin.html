@@ -1,0 +1,26 @@
+<form action="#">
+    <div class="mb-5">
+        <label for="category" class="form-label">Jenis izin:</label>
+        <select cam-variable-name="category" cam-variable-type="String" class="form-select" id="category">
+            <option value="" disabled>Pilih jenis izin</option>
+            <option value="Keperluan Pribadi">Keperluan Pribadi</option>
+            <option value="Sakit">Sakit</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+    </div>
+
+    <div class="mb-5">
+        <label for="date" class="form-label">Tanggal izin:</label>
+        <input type="date" cam-variable-name="date" cam-variable-type="String" id="date" class="form-control" />
+    </div>
+
+    <div class="mb-5">
+        <label for="description" class="form-label">Deskripsi:</label>
+        <textarea cam-variable-name="description" cam-variable-type="String" id="description" class="form-control" rows="3"></textarea>
+    </div>
+    
+    <div class="mb-5">
+        <label for="evidence" class="form-label">Bukti Pendukung</label>
+        <input type="file" cam-variable-name="evidence" cam-variable-type="File" cam-max-filesize="10000000" id="evidence">
+    </div>
+</form>
